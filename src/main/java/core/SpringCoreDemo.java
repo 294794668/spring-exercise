@@ -55,6 +55,6 @@ public class SpringCoreDemo<T> {
     }
 
     private void type() {
-        AnnotationMetadataReadingVisitor visitor = new AnnotationMetadataReadingVisitor();
+//        AnnotationMetadataReadingVisitor visitor = new AnnotationMetadataReadingVisitor();
     }
 }
