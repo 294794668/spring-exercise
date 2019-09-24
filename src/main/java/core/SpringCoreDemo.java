@@ -1,8 +1,8 @@
 package core;
 
+import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.core.serializer.DefaultDeserializer;
 import org.springframework.core.serializer.DefaultSerializer;
-import org.springframework.core.type.classreading.AnnotationMetadataReadingVisitor;
 import pojo.Person;
 
 import java.io.ByteArrayInputStream;
@@ -35,6 +35,14 @@ public class SpringCoreDemo<T> {
         return person;
     }
 
+    public void annotation() {
+//        AnnotationUtils.getAnnotationAttributes();
+    }
+
+    public void codec() {
+//        AnnotationUtils.getAnnotationAttributes();
+    }
+
     private void serializer(T obj) {
         DefaultSerializer defaultSerializer = new DefaultSerializer();
         DefaultDeserializer defaultDeserializer = new DefaultDeserializer();
@@ -55,6 +63,5 @@ public class SpringCoreDemo<T> {
     }
 
     private void type() {
-//        AnnotationMetadataReadingVisitor visitor = new AnnotationMetadataReadingVisitor();
     }
 }
